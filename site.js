@@ -43,7 +43,7 @@
     { lane: 'truffles', t: T(2023, 7, 27), date: '27 Jul 2023', text: 'Truffles launches with 22 business clients.', src: [29] },
     { lane: 'truffles', t: T(2023, 8, 24), date: '24 Aug 2023', text: 'Halborn security assessment announced as complete.', src: [30, 26] },
     { lane: 'truffles', t: T(2024, 2, 6), date: '6 Feb 2024', text: 'Founder speaker on the ZK proofs panel at the Red Beard Ventures Summit.', src: [28] },
-    { lane: 'chainrisk', t: T(2024, 2), date: 'Feb 2024', text: 'Became Strategic Advisor.', src: [1] },
+    { lane: 'chainrisk', t: T(2024, 2), date: 'Feb 2024', text: 'Joined Chainrisk as co-founder and CTO.', src: [] },
     { lane: 'chainrisk', t: T(2024, 7, 24), date: 'Jul 2024', text: 'RiskLayer Builders Round, co-led by Antler and Momentum6.', src: [13, 14, 12, 5, 21] },
     { lane: 'now', t: T(2026, 11), date: 'Now', text: 'Building Ballast and running Provingmark.', src: [], pulse: true }
   ];
