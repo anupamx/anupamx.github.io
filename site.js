@@ -37,20 +37,20 @@
     { key: 'now', name: 'Now', href: '#now', hl: true }
   ];
   var events = [
-    { lane: 'sodio', t: T(2016, 11), date: '2016', text: 'Co-founded Sodio with Naveen Saraswat.', src: [8, 20] },
+    { lane: 'sodio', t: T(2016, 11), date: '2016', text: 'Co-founded Sodio with Naveen Saraswat.', src: [8] },
     { lane: 'munim', t: T(2019, 11), date: 'Nov 2019', text: 'Started Munim in Bengaluru with Naveen Saraswat.', src: [1] },
     { lane: 'munim', t: T(2020, 6), date: '2020', text: 'Munim launched.', src: [7] },
-    { lane: 'munim', t: T(2022, 2, 28), date: '28 Feb 2022', text: 'BikeWo acquired Munim, cash and stock.', src: [9, 22, 10, 7] },
-    { lane: 'truffles', t: T(2022, 2), date: 'Feb 2022', text: 'Co-founded Truffles and became CTO.', src: [1, 23, 24] },
+    { lane: 'munim', t: T(2022, 2, 28), date: '28 Feb 2022', text: 'BikeWo acquired Munim, cash and stock.', src: [9, 21, 10, 7, 32] },
+    { lane: 'truffles', t: T(2022, 2), date: 'Feb 2022', text: 'Co-founded Truffles and became CTO.', src: [1, 22] },
     { lane: 'truffles', t: T(2023, 3, 21), date: '21 Mar 2023', text: "Outlier Ventures' first Zero Knowledge Base Camp cohort.", src: [2] },
     { lane: 'truffles', t: T(2023, 4, 4), date: '4 Apr 2023', text: 'V1 payment platform announced: 10 geographies, 13 currencies.', src: [3] },
     { lane: 'truffles', t: T(2023, 6, 1), date: '1 Jun 2023', text: 'Polygon Supernets paper posted to arXiv.', src: [11] },
     { lane: 'truffles', t: T(2023, 6, 19), date: '19 Jun 2023', text: 'Outlier Ventures reports the angel round closed.', src: [15] },
-    { lane: 'truffles', t: T(2023, 7, 27), date: '27 Jul 2023', text: 'Truffles launches with 22 business clients.', src: [29] },
-    { lane: 'truffles', t: T(2023, 8, 24), date: '24 Aug 2023', text: 'Halborn security assessment announced as complete.', src: [30, 26] },
-    { lane: 'truffles', t: T(2024, 2, 6), date: '6 to 7 Feb 2024', text: 'Founder speaker on the ZK proofs panel at the Red Beard Ventures Summit.', src: [28, 18] },
+    { lane: 'truffles', t: T(2023, 7, 27), date: '27 Jul 2023', text: 'Truffles launches with 22 business clients.', src: [27] },
+    { lane: 'truffles', t: T(2023, 8, 24), date: '24 Aug 2023', text: 'Halborn security assessment announced as complete.', src: [28, 24] },
+    { lane: 'truffles', t: T(2024, 2, 6), date: '6 to 7 Feb 2024', text: 'Founder speaker on the ZK proofs panel at the Red Beard Ventures Summit.', src: [26, 18] },
     { lane: 'chainrisk', t: T(2024, 2), date: 'Feb 2024', text: 'Joined Chainrisk as co-founder and CTO.', src: [] },
-    { lane: 'chainrisk', t: T(2024, 7, 24), date: 'Jul 2024', text: 'RiskLayer Builders Round, co-led by Antler and Momentum6.', src: [13, 14, 12, 5, 21] },
+    { lane: 'chainrisk', t: T(2024, 7, 24), date: 'Jul 2024', text: 'RiskLayer Builders Round, co-led by Antler and Momentum6.', src: [13, 14, 12, 5, 20, 30, 31] },
     { lane: 'now', t: T(2026, 11), date: 'Now', text: 'Building Ballast and running Provingmark.', src: [], pulse: true }
   ];
   var laneByKey = {};
