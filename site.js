@@ -32,7 +32,6 @@
   ];
   var events = [
     { lane: 'sodio', t: T(2016, 11), date: '2016', text: 'Co-founded Sodio with Naveen Saraswat.', src: [8, 20] },
-    { lane: 'sodio', t: T(2022, 2), date: 'Feb 2022', text: 'Sodio continues under Naveen Saraswat.', src: [] },
     { lane: 'munim', t: T(2019, 11), date: 'Nov 2019', text: 'Started Munim in Bengaluru with Naveen Saraswat.', src: [1] },
     { lane: 'munim', t: T(2020, 6), date: '2020', text: 'Munim launched.', src: [7] },
     { lane: 'munim', t: T(2022, 2, 28), date: '28 Feb 2022', text: 'BikeWo acquired Munim, cash and stock.', src: [9, 22, 10, 7] },
