@@ -32,20 +32,19 @@
     { key: 'now', name: 'Now', href: '#now', hl: true }
   ];
   var events = [
-    { lane: 'sodio', t: T(2016, 11), date: 'Nov 2016', text: 'Co-founded Sodio with Naveen Saraswat.', src: [10] },
+    { lane: 'sodio', t: T(2016, 11), date: 'Nov 2016', text: 'Co-founded Sodio with Naveen Saraswat.', src: [8] },
     { lane: 'sodio', t: T(2022, 2), date: 'Feb 2022', text: 'Handed Sodio on.', src: [] },
     { lane: 'munim', t: T(2019, 11), date: 'Nov 2019', text: 'Started Munim in Bengaluru.', src: [] },
-    { lane: 'munim', t: T(2020, 6), date: '2020', text: 'Munim launched.', src: [9] },
-    { lane: 'munim', t: T(2022, 2, 28), date: '28 Feb 2022', text: 'BikeWo acquired Munim, cash and stock.', src: [8, 11] },
+    { lane: 'munim', t: T(2020, 6), date: '2020', text: 'Munim launched.', src: [7] },
+    { lane: 'munim', t: T(2022, 2, 28), date: '28 Feb 2022', text: 'BikeWo acquired Munim, cash and stock.', src: [9, 10, 7] },
     { lane: 'truffles', t: T(2022, 2), date: 'Feb 2022', text: 'Co-founded Truffles and became CTO.', src: [1] },
     { lane: 'truffles', t: T(2023, 3, 21), date: '21 Mar 2023', text: "Outlier Ventures' first Zero Knowledge Base Camp cohort.", src: [2] },
     { lane: 'truffles', t: T(2023, 4, 4), date: '4 Apr 2023', text: 'V1 payment platform announced: 10 geographies, 13 currencies.', src: [3] },
-    { lane: 'truffles', t: T(2023, 5, 23), date: '23 May 2023', text: 'NFT invoicing announced on Polygon.', src: [24] },
-    { lane: 'truffles', t: T(2023, 6, 1), date: '1 Jun 2023', text: 'Polygon Supernets paper posted to arXiv.', src: [15] },
-    { lane: 'truffles', t: T(2023, 6, 19), date: '19 Jun 2023', text: 'Outlier Ventures reports the angel round closed.', src: [20] },
-    { lane: 'chainrisk', t: T(2023, 12, 6), date: '6 Dec 2023', text: 'Chainrisk closes a pre-seed round from Antler.', src: [16, 17] },
+    { lane: 'truffles', t: T(2023, 5, 23), date: '23 May 2023', text: 'NFT invoicing announced on Polygon.', src: [19] },
+    { lane: 'truffles', t: T(2023, 6, 1), date: '1 Jun 2023', text: 'Polygon Supernets paper posted to arXiv.', src: [11] },
+    { lane: 'truffles', t: T(2023, 6, 19), date: '19 Jun 2023', text: 'Outlier Ventures reports the angel round closed.', src: [15] },
     { lane: 'chainrisk', t: T(2024, 2), date: 'Feb 2024', text: 'Joined Chainrisk as co-founder and CTO.', src: [] },
-    { lane: 'chainrisk', t: T(2024, 7, 24), date: 'Jul 2024', text: 'RiskLayer Builders Round, co-led by Antler and Momentum6.', src: [18, 19, 6] },
+    { lane: 'chainrisk', t: T(2024, 7, 24), date: 'Jul 2024', text: 'RiskLayer Builders Round, co-led by Antler and Momentum6.', src: [13, 14, 12, 5] },
     { lane: 'chainrisk', t: T(2025, 5), date: 'May 2025', text: 'Left Chainrisk.', src: [1] },
     { lane: 'now', t: T(2026, 11), date: 'Now', text: 'Building Ballast and running Provingmark.', src: [], pulse: true }
   ];

@@ -264,3 +264,14 @@ footer small { width: 100%; color: var(--faint); font-size: .8125rem; max-width:
   .j-mark { opacity: 1; transition: none; }
   .j-mark.pulse::after { animation: none; }
 }
+
+.chips { display: flex; flex-wrap: wrap; gap: 10px; margin: -12px 0 36px; }
+.chips li { font: 500 12px/1 var(--mono); letter-spacing: .06em; padding: 9px 12px; border: 1px solid var(--border-chip); color: var(--text-2); background: var(--surface); }
+.chip { display: inline-block; vertical-align: middle; margin-left: 10px; font: 500 10px/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--bg); background: var(--accent); padding: 5px 7px; }
+
+/* Press logos */
+.seen-logos { display: flex; flex-wrap: wrap; gap: 12px 14px; align-items: center; }
+.seen .outlet { display: flex; align-items: center; justify-content: center; height: 52px; padding: 0 20px; background: #fff; border: 1px solid var(--border-card); transition: box-shadow .2s ease, transform .2s ease; }
+.seen .outlet:hover { box-shadow: 0 0 12px rgba(245,158,11,.6), 0 0 28px rgba(245,158,11,.25); transform: translateY(-1px); }
+.seen .outlet img { display: block; width: auto; }
+.seen .wordmark { font: 700 1.4rem/1 var(--display); letter-spacing: -0.02em; color: #1a1a1a; }
