@@ -3,12 +3,16 @@
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var coarse = window.matchMedia('(hover: none) and (pointer: coarse)').matches;
 
+  setTimeout(function () { document.documentElement.classList.add('anim-done'); }, 3200);
+
   /* ---------- Reveal: rows fade up, staggered, once ---------- */
   var items = [].slice.call(document.querySelectorAll('.reveal-item'));
   if (reduce || !('IntersectionObserver' in window)) {
     items.forEach(function (el) { el.classList.add('in'); });
   } else {
+    var ioFired = false;
     var rio = new IntersectionObserver(function (entries) {
+      ioFired = true;
       entries.filter(function (e) { return e.isIntersecting; }).forEach(function (e, i) {
         e.target.style.transitionDelay = (0.05 + i * 0.09) + 's';
         e.target.classList.add('in');
@@ -16,6 +20,8 @@
       });
     }, { rootMargin: '0px 0px -10% 0px', threshold: 0 });
     items.forEach(function (el) { rio.observe(el); });
+    /* Failsafe: if the observer never reports (blocked, throttled or unsupported), show everything. */
+    setTimeout(function () { if (!ioFired) items.forEach(function (el) { el.classList.add('in'); }); }, 2500);
   }
 
   /* ---------- Journey: swimlane timeline ---------- */
@@ -42,7 +48,7 @@
     { lane: 'truffles', t: T(2023, 6, 19), date: '19 Jun 2023', text: 'Outlier Ventures reports the angel round closed.', src: [15] },
     { lane: 'truffles', t: T(2023, 7, 27), date: '27 Jul 2023', text: 'Truffles launches with 22 business clients.', src: [29] },
     { lane: 'truffles', t: T(2023, 8, 24), date: '24 Aug 2023', text: 'Halborn security assessment announced as complete.', src: [30, 26] },
-    { lane: 'truffles', t: T(2024, 2, 6), date: '6 Feb 2024', text: 'Founder speaker on the ZK proofs panel at the Red Beard Ventures Summit.', src: [28] },
+    { lane: 'truffles', t: T(2024, 2, 6), date: '6 to 7 Feb 2024', text: 'Founder speaker on the ZK proofs panel at the Red Beard Ventures Summit.', src: [28, 18] },
     { lane: 'chainrisk', t: T(2024, 2), date: 'Feb 2024', text: 'Joined Chainrisk as co-founder and CTO.', src: [] },
     { lane: 'chainrisk', t: T(2024, 7, 24), date: 'Jul 2024', text: 'RiskLayer Builders Round, co-led by Antler and Momentum6.', src: [13, 14, 12, 5, 21] },
     { lane: 'now', t: T(2026, 11), date: 'Now', text: 'Building Ballast and running Provingmark.', src: [], pulse: true }
@@ -153,10 +159,13 @@
     if (reduce || !('IntersectionObserver' in window)) {
       chart.classList.add('in');
     } else {
+      var cioFired = false;
       var cio = new IntersectionObserver(function (es) {
+        cioFired = true;
         if (es.some(function (e) { return e.isIntersecting; })) { chart.classList.add('in'); cio.disconnect(); }
       }, { threshold: 0.25 });
       cio.observe(chart);
+      setTimeout(function () { if (!cioFired) chart.classList.add('in'); }, 2500);
     }
   }
   if (list) {

@@ -285,3 +285,6 @@ footer small { width: 100%; color: var(--faint); font-size: .8125rem; max-width:
 @media (max-height: 560px) { .ch-side { position: static; } }
 @media print { .nav, .scroll-progress, .journey { display: none; } html.js .reveal-item { opacity: 1; transform: none; } }
 @media (max-width: 960px) { .ch-side:not(:has(.logo-tile)) > .t-h3, .ch-side:not(:has(.logo-tile)) > .role { grid-column: 1 / -1; } }
+
+/* Failsafe: after the entrance should have finished, force the final state so text is never left hidden. */
+html.anim-done .hero-rise, html.anim-done .hero-fade-up { animation: none; }
